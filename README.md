@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ESFA INDIA — EXPO & STALL FABRICATORS ASSOCIATION
 
-## Getting Started
+Official web portal and landing page for **ESFA India (Expo & Stall Fabricators Association)**, the premier national professional association / sangam representing stall designers, fabrication workshops, turnkey event contractors, and exhibition service providers across India.
 
-First, run the development server:
+---
+
+## 🌟 Key Features
+
+- **Single Landing Page Architecture**:
+  - Smooth anchor navigation across all sections (`#about`, `#ecosystem`, `#leadership`, `#events`, `#gallery`, `#membership`, `#contact`).
+- **Interactive Popup Modal for Membership**:
+  - Direct digital application modal with backdrop blur, scroll locking, category selection, and instant confetti on submission.
+- **Photo Gallery Lightbox**:
+  - Full-screen interactive modal lightbox for high-resolution project showcases.
+- **Leadership Profiles Modal**:
+  - Detailed bio viewer for national committee members.
+- **Serverless Email Integration**:
+  - Dual-support email dispatch system ready for Vercel Serverless (Resend API & Nodemailer SMTP).
+  - In local development without credentials, simulates and logs submissions cleanly.
+- **Branded Vector Logo**:
+  - Custom geometric gold shield emblem and typography rendered via React SVG for crisp 4K display.
+- **Footer Attribution**:
+  - Developed by Axiino redirect badge.
+
+---
+
+## 🚀 Getting Started Locally
 
 ```bash
+# 1. Install dependencies
+npm install
+
+# 2. Run local development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 3. Open browser
+# Navigate to http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To create an optimized production build:
+```bash
+npm run build
+npm run start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Environment Variables (Vercel / Production)
 
-## Learn More
+Create a `.env.local` file or configure these in your **Vercel Project Settings > Environment Variables**:
 
-To learn more about Next.js, take a look at the following resources:
+| Variable | Description |
+|---|---|
+| `SECRETARIAT_EMAIL` | Destination email to receive membership and contact submissions (e.g., `secretariat@esfa-india.org`) |
+| `RESEND_API_KEY` | *(Option A - Recommended)* Resend API key from [resend.com](https://resend.com) |
+| `RESEND_FROM_EMAIL` | Verified sender address (e.g. `onboarding@resend.dev` or `noreply@yourdomain.com`) |
+| `SMTP_HOST` | *(Option B)* SMTP server hostname |
+| `SMTP_PORT` | SMTP server port (usually `587`) |
+| `SMTP_USER` | SMTP username |
+| `SMTP_PASS` | SMTP password or app-specific password |
+| `SMTP_FROM` | SMTP sender header |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌐 Deploy to Vercel
 
-## Deploy on Vercel
+1. Push this repository to GitHub.
+2. Import the project in [Vercel Dashboard](https://vercel.com/new).
+3. Set your environment variables (like `RESEND_API_KEY` and `SECRETARIAT_EMAIL`).
+4. Click **Deploy**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏛️ Developed by
+**Axiino** — [https://axiino.com](https://axiino.com)

@@ -1,0 +1,349 @@
+// Prisma schema for Expo & Stall Fabricators Association
+// PostgreSQL schema ready for Vercel Postgres, Neon, Supabase or Railway
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleType {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  EVENT_MANAGER
+  MEMBERSHIP_MANAGER
+}
+
+enum ApplicationStatus {
+  PENDING
+  CONTACTED
+  APPROVED
+  REJECTED
+}
+
+enum MemberStatus {
+  ACTIVE
+  PENDING
+  SUSPENDED
+  INACTIVE
+}
+
+enum PublishStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model User {
+  id           String      @id @default(cuid())
+  name         String
+  email        String      @unique
+  passwordHash String
+  roleId       String
+  role         Role        @relation(fields: [roleId], references: [id])
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  auditLogs    AuditLog[]
+  mediaAssets  MediaAsset[]
+
+  @@map("users")
+}
+
+model Role {
+  id          String           @id @default(cuid())
+  name        RoleType         @unique
+  description String?
+  users       User[]
+  permissions RolePermission[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@map("roles")
+}
+
+model Permission {
+  id          String           @id @default(cuid())
+  action      String           // e.g. "view", "create", "update", "delete", "publish", "approve"
+  resource    String           // e.g. "leadership", "members", "events", "news"
+  roles       RolePermission[]
+
+  @@unique([action, resource])
+  @@map("permissions")
+}
+
+model RolePermission {
+  roleId       String
+  permissionId String
+  role         Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+  @@map("role_permissions")
+}
+
+model Leader {
+  id              String   @id @default(cuid())
+  name            String
+  designation     String   // e.g. "President", "Vice President", "Secretary", etc.
+  slug            String   @unique
+  photoUrl        String?  // null or silhouette placeholder by default
+  shortBio        String
+  fullBio         String
+  experience      String?  // Industry experience in years or details
+  responsibilities String?
+  email           String?
+  phone           String?
+  linkedin        String?
+  twitter         String?
+  displayOrder    Int      @default(0)
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("leaders")
+}
+
+model Member {
+  id              String       @id @default(cuid())
+  companyName     String
+  slug            String       @unique
+  representative  String
+  designation     String?
+  category        String       // "Stall Fabrication", "Exhibition Design", "AV & Technology", etc.
+  memberType      String       // "Founder Member", "Company Member", "Associate Member"
+  city            String
+  state           String
+  website         String?
+  phone           String
+  email           String
+  logoUrl         String?
+  description     String
+  services        String[]     // list of services offered
+  portfolioImages String[]     // array of showcase images
+  status          MemberStatus @default(ACTIVE)
+  joinedAt        DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  @@map("members")
+}
+
+model MembershipType {
+  id           String   @id @default(cuid())
+  name         String   // "Individual Member", "Company Member", "Associate Member", etc.
+  slug         String   @unique
+  description  String
+  benefits     String[]
+  eligibility  String
+  feeAnnual    Float?
+  feeCurrency  String   @default("INR")
+  displayOrder Int      @default(0)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("membership_types")
+}
+
+model MembershipApplication {
+  id               String            @id @default(cuid())
+  fullName         String
+  companyName      String
+  designation      String?
+  mobileNumber     String
+  email            String
+  city             String
+  state            String
+  businessCategory String
+  experienceYears  Int?
+  website          String?
+  gstNumber        String?
+  message          String?
+  docUrl           String?
+  status           ApplicationStatus @default(PENDING)
+  notes            String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+
+  @@map("membership_applications")
+}
+
+model Event {
+  id            String              @id @default(cuid())
+  title         String
+  slug          String              @unique
+  bannerUrl     String
+  date          DateTime
+  timeString    String
+  venue         String
+  city          String
+  mapsUrl       String?
+  description   String
+  agenda        Json?               // [{ time: "10:00 AM", title: "Keynote", speaker: "..." }]
+  speakers      Json?               // [{ name: "...", role: "...", photo: "..." }]
+  galleryImages String[]
+  isFeatured    Boolean             @default(false)
+  status        PublishStatus       @default(PUBLISHED)
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  registrations EventRegistration[]
+
+  @@map("events")
+}
+
+model EventRegistration {
+  id         String   @id @default(cuid())
+  eventId    String
+  event      Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  name       String
+  company    String
+  mobile     String
+  email      String
+  attendees  Int      @default(1)
+  createdAt  DateTime @default(now())
+
+  @@map("event_registrations")
+}
+
+model News {
+  id          String        @id @default(cuid())
+  title       String
+  slug        String        @unique
+  category    String        // "Association Launch", "Industry Update", etc.
+  imageUrl    String
+  summary     String
+  content     String
+  author      String        @default("ESFA Secretariat")
+  status      PublishStatus @default(PUBLISHED)
+  publishedAt DateTime      @default(now())
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@map("news")
+}
+
+model GalleryAlbum {
+  id          String         @id @default(cuid())
+  title       String
+  category    String         // "Exhibitions", "Member Meets", "Awards", etc.
+  description String?
+  coverImage  String?
+  images      GalleryImage[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@map("gallery_albums")
+}
+
+model GalleryImage {
+  id           String        @id @default(cuid())
+  title        String?
+  imageUrl     String
+  thumbnailUrl String?
+  category     String        // "Exhibitions", "Member Meets", "Workshops", etc.
+  albumId      String?
+  album        GalleryAlbum? @relation(fields: [albumId], references: [id], onDelete: SetNull)
+  displayOrder Int           @default(0)
+  createdAt    DateTime      @default(now())
+
+  @@map("gallery_images")
+}
+
+model Testimonial {
+  id          String   @id @default(cuid())
+  name        String
+  designation String
+  company     String
+  quote       String
+  avatarUrl   String?
+  rating      Int      @default(5)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("testimonials")
+}
+
+model Partner {
+  id           String   @id @default(cuid())
+  name         String
+  logoUrl      String
+  website      String?
+  displayOrder Int      @default(0)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("partners")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  company   String?
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  repliedAt DateTime?
+  createdAt DateTime @default(now())
+
+  @@map("contact_messages")
+}
+
+model SiteSettings {
+  id                String   @id @default("default")
+  associationName   String   @default("EXPO & STALL FABRICATORS ASSOCIATION")
+  tagline           String   @default("One Industry. One Community. One Voice.")
+  logoUrl           String?
+  address           String   @default("Exhibition Convention Hub, Aerocity, New Delhi - 110037, India")
+  phone             String   @default("+91 98765 43210")
+  email             String   @default("contact@esfa-india.org")
+  whatsapp          String   @default("+91 98765 43210")
+  workingHours      String   @default("Monday - Saturday: 9:30 AM to 6:30 PM IST")
+  heroHeadline      String   @default("UNITING THE EXHIBITION STALL & FABRICATION INDUSTRY")
+  heroSubtext       String   @default("Building a stronger, connected and professional future for exhibition stall designers, fabricators and service providers across India.")
+  statMembers       String   @default("500+")
+  statCompanies     String   @default("100+")
+  statProjects      String   @default("1000+")
+  statCities        String   @default("20+")
+  socialLinkedin    String   @default("https://linkedin.com")
+  socialInstagram   String   @default("https://instagram.com")
+  socialFacebook    String   @default("https://facebook.com")
+  socialYoutube     String   @default("https://youtube.com")
+  updatedAt         DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model MediaAsset {
+  id          String   @id @default(cuid())
+  fileName    String
+  fileUrl     String
+  fileType    String   // image/png, image/jpeg, etc.
+  mimeType    String
+  altText     String?
+  storageKey  String?
+  uploadedById String?
+  uploadedBy  User?    @relation(fields: [uploadedById], references: [id], onDelete: SetNull)
+  createdAt   DateTime @default(now())
+
+  @@map("media_assets")
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  action    String
+  resource  String
+  details   Json?
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  @@map("audit_logs")
+}
