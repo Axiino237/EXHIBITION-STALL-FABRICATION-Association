@@ -14,8 +14,8 @@ export interface EmailPayload {
  * Supports SMTP (Nodemailer), Resend API, and safe dev fallback.
  */
 export async function sendEmail(payload: EmailPayload): Promise<{ success: boolean; id?: string; error?: string }> {
-  const recipient = payload.to || process.env.ADMIN_EMAIL || process.env.SMTP_USER || 'secretariat@esfa-india.org';
-  const sender = payload.from || process.env.SMTP_FROM || '"ESFA Portal" <no-reply@esfa-india.org>';
+  const recipient = payload.to || process.env.ADMIN_EMAIL || process.env.SMTP_USER || 'secretariat@tnsfa.org';
+  const sender = payload.from || process.env.SMTP_FROM || '"TNSFA Portal" <no-reply@tnsfa.org>';
 
   // 1. Try Resend if API key configured (Vercel-native)
   if (process.env.RESEND_API_KEY) {

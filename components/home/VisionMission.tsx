@@ -13,7 +13,7 @@ export default function VisionMission() {
             Vision, Mission &amp; Shared Values
           </h2>
           <p className="text-sm text-slate-300 mt-2">
-            The guiding pillars powering our commitment to every stall fabricator and designer in India.
+            The guiding pillars powering our commitment to every stall fabricator and designer across Tamil Nadu.
           </p>
         </div>
 
@@ -28,11 +28,11 @@ export default function VisionMission() {
               <span className="text-xs font-bold uppercase tracking-widest text-amber-400">Pillar 01</span>
               <h3 className="text-2xl font-bold text-white mt-1 mb-4">OUR VISION</h3>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-light">
-                &ldquo;To build a strong, respected and professionally connected exhibition industry community.&rdquo;
+                &ldquo;To build a strong, respected and professionally connected exhibition industry community across Tamil Nadu.&rdquo;
               </p>
             </div>
             <div className="mt-8 pt-4 border-t border-white/10 text-xs text-slate-400">
-              National Unity &amp; Global Standing
+              State-Wide Unity &amp; Excellence
             </div>
           </div>
 

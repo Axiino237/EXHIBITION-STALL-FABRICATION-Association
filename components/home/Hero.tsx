@@ -42,19 +42,19 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-amber-400/30 backdrop-blur-md mb-6 shadow-lg shadow-amber-500/10 animate-fade-in">
           <Sparkles className="w-4 h-4 text-[#F59E0B]" />
           <span className="text-xs sm:text-sm font-bold tracking-wider text-amber-300 uppercase">
-            National Sangam of Stall Fabricators &amp; Designers
+            Tamil Nadu State Sangam of Stall Fabricators &amp; Designers
           </span>
         </div>
 
         {/* Hero Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.15] mb-6">
-          UNITING THE EXHIBITION <br className="hidden sm:inline" />
+          UNITING TAMIL NADU&apos;S <br className="hidden sm:inline" />
           <span className="text-gold-gradient">STALL &amp; FABRICATION</span> INDUSTRY
         </h1>
 
         {/* Supporting Text */}
         <p className="max-w-3xl mx-auto text-base sm:text-xl text-slate-300 font-normal leading-relaxed mb-10">
-          Building a stronger, connected and professional future for exhibition stall designers, fabricators and service providers across India.
+          Building a stronger, connected and professional future for exhibition stall designers, fabricators and expo service providers across Chennai, Coimbatore, Madurai and all of Tamil Nadu.
         </p>
 
         {/* CTAs */}
@@ -85,11 +85,11 @@ export default function Hero() {
         <div className="mt-14 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="p-3">
             <span className="text-xs uppercase tracking-wider text-slate-400">Representation</span>
-            <p className="text-sm sm:text-base font-bold text-white mt-0.5">National Body</p>
+            <p className="text-sm sm:text-base font-bold text-white mt-0.5">State Apex Body</p>
           </div>
           <div className="p-3">
             <span className="text-xs uppercase tracking-wider text-slate-400">Coverage</span>
-            <p className="text-sm sm:text-base font-bold text-white mt-0.5">Pan-India Chapters</p>
+            <p className="text-sm sm:text-base font-bold text-white mt-0.5">All 38 Districts</p>
           </div>
           <div className="p-3">
             <span className="text-xs uppercase tracking-wider text-slate-400">Standards</span>

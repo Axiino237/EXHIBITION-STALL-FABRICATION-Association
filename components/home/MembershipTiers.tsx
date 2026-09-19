@@ -144,13 +144,13 @@ export default function MembershipTiers({ tiers }: TiersProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs sm:text-sm font-bold tracking-widest text-[#F59E0B] uppercase">
-            National Association Membership
+            Tamil Nadu State Association Membership
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-1">
             Choose Your Membership Category
           </h2>
           <p className="text-sm sm:text-base text-slate-300 mt-3">
-            Open to individual designers, fabrication workshops, turnkey contractors, allied equipment suppliers, and national materials partners.
+            Open to individual designers, fabrication workshops, turnkey contractors, allied equipment suppliers, and regional materials partners across Tamil Nadu.
           </p>
         </div>
 
@@ -241,10 +241,10 @@ export default function MembershipTiers({ tiers }: TiersProps) {
               <Sparkles className="w-3.5 h-3.5" /> Fast-Track Digital Enrolment
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white">
-              Ready to Join ESFA India Sangam?
+              Ready to Join Tamil Nadu Stall Fabrication Association?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-lg">
-              Click the button to open the official application form. Our membership scrutiny desk will verify and issue your membership credentials.
+              Click the button to open the official application form. Our membership scrutiny desk will verify and issue your TNSFA membership credentials.
             </p>
           </div>
           <button
@@ -253,7 +253,7 @@ export default function MembershipTiers({ tiers }: TiersProps) {
               setSelectedTierName('Company Member');
               setIsModalOpen(true);
             }}
-            className="shrink-0 px-8 py-4 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-[#FBBF24] via-[#F59E0B] to-[#D97706] shadow-xl shadow-amber-500/25 hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+            className="shrink-0 px-8 py-4 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-[#FBBF24] via-[#F59E0B] to-[#D97706] shadow-xl shadow-amber-500/25 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Apply for Membership</span>
             <ArrowRight className="w-4 h-4" />
@@ -293,7 +293,7 @@ export default function MembershipTiers({ tiers }: TiersProps) {
                   Application Successfully Received!
                 </h3>
                 <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                  Thank you. Your membership application for <strong className="text-amber-400">{selectedTierName}</strong> has been received by the ESFA Secretariat. Our team will contact you shortly for onboarding verification.
+                  Thank you. Your membership application for <strong className="text-amber-400">{selectedTierName}</strong> has been received by the TNSFA Secretariat. Our team will contact you shortly for onboarding verification.
                 </p>
                 <div className="pt-4 flex justify-center gap-3">
                   <button
@@ -319,13 +319,13 @@ export default function MembershipTiers({ tiers }: TiersProps) {
               <div>
                 <div className="border-b border-white/10 pb-5 mb-6 pr-8">
                   <span className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5" /> ESFA National Membership Enrolment
+                    <Sparkles className="w-3.5 h-3.5" /> TNSFA State Membership Enrolment
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mt-1">
                     Apply for Membership
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-400 mt-1">
-                    Applying for: <strong className="text-amber-400">{selectedTierName}</strong> &bull; Join the united voice of Indian stall fabricators and expo builders.
+                    Applying for: <strong className="text-amber-400">{selectedTierName}</strong> &bull; Join the united voice of Tamil Nadu stall fabricators and expo builders.
                   </p>
                 </div>
 

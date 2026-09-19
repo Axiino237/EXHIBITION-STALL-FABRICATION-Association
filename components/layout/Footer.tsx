@@ -17,7 +17,7 @@ export default function Footer() {
               <Logo showTagline={true} className="h-12 sm:h-14 w-auto" />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed">
-              The premier national association uniting stall fabricators, 3D spatial designers, event contractors, and exhibition service providers across India. Dedicated to professional excellence, safety, and mutual industry growth.
+              The apex state association uniting stall fabricators, 3D spatial designers, event contractors, and exhibition service providers across Tamil Nadu. Dedicated to professional excellence, safety, and mutual industry growth.
             </p>
             <div className="pt-2 flex items-center space-x-3">
               <a
@@ -129,15 +129,15 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-slate-300">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F59E0B] shrink-0 mt-0.5" />
-                <span>Aerocity Expo Tower, New Delhi - 110037, India</span>
+                <span>Trade Centre Hub, Mount Poonamallee Road, Nandambakkam / Guindy, Chennai - 600089, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#F59E0B] shrink-0" />
-                <span>+91 11 4987 6500</span>
+                <span>+91 44 4897 6500</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#F59E0B] shrink-0" />
-                <span>secretariat@esfa-india.org</span>
+                <span>secretariat@tnsfa.org</span>
               </li>
               <li className="flex items-start gap-2">
                 <Clock className="w-4 h-4 text-[#F59E0B] shrink-0 mt-0.5" />
@@ -149,7 +149,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <p>© 2026 EXPO &amp; STALL FABRICATORS ASSOCIATION (ESFA INDIA). All Rights Reserved.</p>
+          <p>© 2026 TAMIL NADU STALL FABRICATION ASSOCIATION (TNSFA). All Rights Reserved.</p>
           
           {/* Developed by Axiino */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-amber-400/40 transition-colors">

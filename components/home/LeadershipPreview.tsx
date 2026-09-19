@@ -27,7 +27,7 @@ export default function LeadershipPreview({ leaders }: LeadershipProps) {
               Leadership Committee
             </h2>
             <p className="text-sm sm:text-base text-slate-300 mt-2 max-w-2xl">
-              Meet the people working together to build a stronger exhibition industry across India.
+              Meet the people working together to build a stronger exhibition industry across Tamil Nadu.
             </p>
           </div>
           <div className="mt-6 md:mt-0">

@@ -36,10 +36,10 @@ export default function AboutSection() {
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#0B1220]/90 backdrop-blur-md border border-amber-500/30 flex items-center justify-between">
                 <div>
                   <span className="text-[10px] uppercase font-bold text-amber-400 tracking-wider">Collective Impact</span>
-                  <p className="text-sm font-bold text-white">Uniting Over 500+ Fabrication Studios</p>
+                  <p className="text-sm font-bold text-white">Uniting Fabrication Studios Across Tamil Nadu</p>
                 </div>
-                <div className="h-9 w-9 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-[#F59E0B] font-bold text-xs">
-                  ESFA
+                <div className="h-9 px-2 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-[#F59E0B] font-bold text-xs">
+                  TNSFA
                 </div>
               </div>
             </div>
@@ -55,16 +55,16 @@ export default function AboutSection() {
                 About the Association
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-2 leading-tight">
-                Empowering the Craftsmen &amp; Creators of Indian Trade Exhibitions
+                Empowering the Craftsmen &amp; Creators of Tamil Nadu&apos;s Trade Exhibitions
               </h2>
             </div>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              The <strong>Expo &amp; Stall Fabricators Association (ESFA)</strong> was established as the unified national representative body for businesses, contractors, and creative professionals operating across India&apos;s multi-crore exhibition and stall fabrication ecosystem.
+              The <strong>Tamil Nadu Stall Fabrication Association (TNSFA)</strong> was established as the apex state representative body for businesses, contractors, and creative professionals operating across Tamil Nadu&apos;s exhibition and stall fabrication ecosystem.
             </p>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              From high-pressure 48-hour build-ups at premier convention hubs like Pragati Maidan, BEC Goregaon, and BIEC Bengaluru, to intricate multi-story pavilions, our members transform architectural blueprints into stunning physical brand environments. We ensure their rights, safety, standard contracts, and vocational growth are protected at every tier.
+              From high-pressure build-ups at premier convention venues like Chennai Trade Centre (CTC), CODISSIA Trade Fair Complex Coimbatore, and Madurai Expo Centre, to intricate state-wide brand pavilions, our members transform architectural blueprints into stunning physical brand environments. We ensure their rights, safety, standard contracts, and vocational growth are protected at every tier.
             </p>
 
             {/* 8 Focus Areas Bullet Points */}

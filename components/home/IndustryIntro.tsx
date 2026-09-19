@@ -108,7 +108,7 @@ export default function IndustryIntro() {
             One Industry. One Community. One Voice.
           </h2>
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-            The association serves as the national platform uniting all specialized disciplines required to bring world-class exhibition pavilions and brand spaces to life.
+            The association serves as the apex state platform uniting all specialized disciplines required to bring world-class exhibition pavilions and brand spaces to life across Tamil Nadu.
           </p>
         </div>
 

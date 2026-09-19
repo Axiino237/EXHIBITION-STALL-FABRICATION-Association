@@ -9,7 +9,7 @@ export default function MobileCTA() {
     <aside aria-label="Mobile membership quick action" className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0B1220]/95 backdrop-blur-lg border-t border-white/10 px-4 py-3 shadow-2xl flex items-center justify-between">
       <div className="flex flex-col">
         <span className="text-[11px] font-bold text-[#F59E0B] uppercase tracking-wider flex items-center gap-1">
-          <Sparkles className="w-3 h-3" /> Join ESFA Today
+          <Sparkles className="w-3 h-3" /> Join TNSFA Today
         </span>
         <span className="text-xs text-slate-300">Uniting Stall Fabricators</span>
       </div>

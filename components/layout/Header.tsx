@@ -103,7 +103,7 @@ export default function Header() {
           <div className="space-y-2">
             <div className="pb-3 mb-2 border-b border-white/10">
               <span className="text-xs font-bold tracking-wider uppercase text-amber-400 flex items-center gap-1.5">
-                <Award className="w-4 h-4" /> National Association Sangam
+                <Award className="w-4 h-4" /> Tamil Nadu State Association Sangam
               </span>
             </div>
 

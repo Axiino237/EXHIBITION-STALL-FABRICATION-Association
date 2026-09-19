@@ -25,7 +25,7 @@ export default function UpcomingEvents({ events }: EventsProps) {
               Upcoming Industry Events
             </h2>
             <p className="text-sm text-slate-300 mt-2 max-w-2xl">
-              Join peer networking dinners, technical training clinics, and annual national conventions.
+              Join peer networking meets, technical training clinics, and annual state conventions across Tamil Nadu.
             </p>
           </div>
           <div className="mt-6 md:mt-0">

@@ -5,33 +5,34 @@ import Footer from '@/components/layout/Footer';
 import MobileCTA from '@/components/layout/MobileCTA';
 
 export const metadata: Metadata = {
-  title: 'ESFA India | Expo & Stall Fabricators Association',
+  title: 'TNSFA | Tamil Nadu Stall Fabrication Association',
   description:
-    'The premier national association and sangam uniting exhibition stall fabricators, 3D spatial designers, event contractors, and exhibition service providers across India.',
+    'The apex state association and sangam uniting exhibition stall fabricators, 3D spatial designers, event contractors, and expo service providers across Tamil Nadu.',
   keywords: [
-    'Exhibition Stall Fabricators India',
-    'Stall Fabrication Association',
-    'Exhibition Sangam India',
-    'Trade Fair Stall Builders',
-    '3D Stall Designers',
-    'Exhibition Event Contractors',
-    'Pragati Maidan Fabricators',
-    'BEC Mumbai Stall Builders',
-    'BIEC Bangalore Expo Vendors'
+    'Tamil Nadu Stall Fabrication Association',
+    'TNSFA',
+    'Stall Fabricators Chennai',
+    'Stall Fabricators Coimbatore',
+    'Chennai Trade Centre Fabricators',
+    'CODISSIA Coimbatore Stall Builders',
+    'Madurai Exhibition Contractors',
+    'Tamil Nadu Expo Sangam',
+    'Trade Fair Stall Builders Tamil Nadu',
+    '3D Stall Designers Chennai'
   ],
-  authors: [{ name: 'ESFA Secretariat' }],
-  metadataBase: new URL('https://esfa-india.org'),
+  authors: [{ name: 'TNSFA Secretariat' }],
+  metadataBase: new URL('https://tnsfa.org'),
   openGraph: {
-    title: 'Expo & Stall Fabricators Association (ESFA India)',
-    description: 'Uniting the Exhibition Stall & Fabrication Industry across India.',
-    url: 'https://esfa-india.org',
-    siteName: 'ESFA India',
+    title: 'Tamil Nadu Stall Fabrication Association (TNSFA)',
+    description: 'Uniting the Exhibition Stall & Fabrication Industry across Tamil Nadu.',
+    url: 'https://tnsfa.org',
+    siteName: 'TNSFA',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
-        alt: 'ESFA Expo & Stall Fabricators Association India',
+        alt: 'Tamil Nadu Stall Fabrication Association (TNSFA)',
       },
     ],
     locale: 'en_IN',
@@ -39,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ESFA India | Expo & Stall Fabricators Association',
-    description: 'National body for exhibition stall builders, designers and service contractors.',
+    title: 'TNSFA | Tamil Nadu Stall Fabrication Association',
+    description: 'Apex state body for exhibition stall builders, designers and expo service contractors in Tamil Nadu.',
     images: ['https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80'],
   },
 };

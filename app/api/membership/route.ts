@@ -69,13 +69,13 @@ export async function POST(req: NextRequest) {
           <p style="margin: 0;"><strong>Message / Background:</strong></p>
           <p style="margin-top: 6px; white-space: pre-wrap;">${message || 'No additional comments provided.'}</p>
         </div>
-        <p style="font-size: 12px; color: #94A3B8;">Review and approve this application in the ESFA Admin Portal.</p>
+        <p style="font-size: 12px; color: #94A3B8;">Review and approve this application in the TNSFA Secretariat.</p>
       </div>
     `;
 
     await sendEmail({
-      to: process.env.ADMIN_EMAIL || 'secretariat@esfa-india.org',
-      subject: `[ESFA Membership Application] ${companyName} (${fullName})`,
+      to: process.env.ADMIN_EMAIL || 'secretariat@tnsfa.org',
+      subject: `[TNSFA Membership Application] ${companyName} (${fullName})`,
       replyTo: email,
       html: adminEmailHtml
     });
@@ -84,23 +84,23 @@ export async function POST(req: NextRequest) {
     const userEmailHtml = `
       <div style="font-family: Arial, sans-serif; background: #0B1220; color: #FFFFFF; padding: 24px; border-radius: 8px;">
         <h2 style="color: #F59E0B; margin-top: 0; border-bottom: 2px solid #F59E0B; padding-bottom: 8px;">
-          Thank You for Applying to ESFA India
+          Thank You for Applying to TNSFA
         </h2>
         <p>Dear ${fullName},</p>
         <p>We have successfully received your membership application for <strong>${companyName}</strong> in the category <strong>${businessCategory}</strong>.</p>
         <p>Our Membership Scrutiny Committee is currently reviewing your application details. A representative from the Secretariat will get in touch with you via phone or WhatsApp at <strong>${mobileNumber}</strong> within 1-2 business days to complete the onboarding verification.</p>
         <div style="background: #111827; padding: 16px; border-left: 4px solid #F59E0B; margin: 16px 0; border-radius: 4px;">
           <p style="margin: 0; font-size: 14px; color: #CBD5E1;">
-            "Uniting the Exhibition Stall & Fabrication Industry — Building a stronger, connected and professional future together."
+            "Uniting Tamil Nadu's Stall & Fabrication Industry — Building a stronger, connected and professional future together."
           </p>
         </div>
-        <p>Warm regards,<br><strong>Membership Committee</strong><br>Expo & Stall Fabricators Association (ESFA)</p>
+        <p>Warm regards,<br><strong>Membership Committee</strong><br>Tamil Nadu Stall Fabrication Association (TNSFA)</p>
       </div>
     `;
 
     await sendEmail({
       to: email,
-      subject: `ESFA India: Application Received for ${companyName}`,
+      subject: `TNSFA: Application Received for ${companyName}`,
       html: userEmailHtml
     });
 

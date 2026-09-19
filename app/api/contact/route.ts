@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
       company: company || 'Individual / Freelance',
       email,
       phone: phone || 'Not provided',
-      subject: subject || 'General Inquiry via ESFA Website',
+      subject: subject || 'General Inquiry via TNSFA Website',
       message,
       isRead: false,
       createdAt: new Date().toISOString()
@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; background: #0B1220; color: #FFFFFF; padding: 24px; border-radius: 8px;">
         <h2 style="color: #F59E0B; margin-top: 0; border-bottom: 2px solid #F59E0B; padding-bottom: 8px;">
-          New Contact Message — ESFA Secretariat
+          New Contact Message — TNSFA Secretariat
         </h2>
         <p><strong>From:</strong> ${name} (${company || 'Individual'})</p>
         <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #F59E0B;">${email}</a></p>
@@ -43,13 +43,13 @@ export async function POST(req: NextRequest) {
         <div style="background: #111827; padding: 16px; border-left: 4px solid #F59E0B; margin: 16px 0; border-radius: 4px;">
           <p style="margin: 0; white-space: pre-wrap;">${message}</p>
         </div>
-        <p style="font-size: 12px; color: #94A3B8;">Received via Expo & Stall Fabricators Association Web Portal</p>
+        <p style="font-size: 12px; color: #94A3B8;">Received via Tamil Nadu Stall Fabrication Association Web Portal</p>
       </div>
     `;
 
     await sendEmail({
-      to: process.env.ADMIN_EMAIL || 'secretariat@esfa-india.org',
-      subject: `[ESFA Contact] ${subject || 'New Message from ' + name}`,
+      to: process.env.ADMIN_EMAIL || 'secretariat@tnsfa.org',
+      subject: `[TNSFA Contact] ${subject || 'New Message from ' + name}`,
       replyTo: email,
       html: emailHtml
     });

@@ -67,26 +67,26 @@ export default function Logo({ className = "h-11 w-auto", showTagline = true }: 
 
       {/* Association Typography */}
       <div className="flex flex-col justify-center">
-        {/* Line 1: ESFA INDIA */}
+        {/* Line 1: TNSFA TAMIL NADU */}
         <div className="flex items-center gap-1.5 leading-none">
           <span className="text-xl sm:text-2xl font-black tracking-wider text-white">
-            ESFA
+            TNSFA
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
-          <span className="px-1.5 py-0.5 rounded bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-[#0B1220] text-[10px] sm:text-xs font-black tracking-wider uppercase">
-            INDIA
+          <span className="px-1.5 py-0.5 rounded bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-[#0B1220] text-[9px] sm:text-[10px] font-black tracking-wider uppercase">
+            TAMIL NADU
           </span>
         </div>
 
         {/* Line 2: Full Association Name */}
         <span className="text-[10px] sm:text-[11px] font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 uppercase leading-tight mt-0.5">
-          EXPO &amp; STALL FABRICATORS ASSOCIATION
+          TAMIL NADU STALL FABRICATION ASSOCIATION
         </span>
 
         {/* Line 3: Sangam Tagline (Optional) */}
         {showTagline && (
           <span className="text-[8px] sm:text-[9px] font-medium tracking-widest text-slate-400 uppercase leading-tight mt-0.5">
-            National Sangam &bull; Design &bull; Fabrication &bull; Services
+            State Sangam &bull; Stall Design &bull; Fabrication &bull; Expo Services
           </span>
         )}
       </div>

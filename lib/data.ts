@@ -13,16 +13,16 @@ import {
 } from './types';
 
 export const initialSiteSettings: SiteSettings = {
-  associationName: "EXPO & STALL FABRICATORS ASSOCIATION",
-  tagline: "One Industry. One Community. One Voice.",
+  associationName: "TAMIL NADU STALL FABRICATION ASSOCIATION",
+  tagline: "One Industry. One Community. One Voice across Tamil Nadu.",
   logoUrl: "/logo.svg",
-  address: "Association Secretariat, Expo Tower, Aerocity, New Delhi - 110037, India",
-  phone: "+91 11 4987 6500",
-  email: "secretariat@esfa-india.org",
-  whatsapp: "+91 98110 54321",
+  address: "Association Secretariat, Trade Centre Hub, Mount Poonamallee Road, Nandambakkam / Guindy, Chennai - 600089, Tamil Nadu, India",
+  phone: "+91 44 4897 6500",
+  email: "secretariat@tnsfa.org",
+  whatsapp: "+91 98401 23456",
   workingHours: "Monday - Saturday: 9:30 AM to 6:30 PM IST",
-  heroHeadline: "UNITING THE EXHIBITION STALL & FABRICATION INDUSTRY",
-  heroSubtext: "Building a stronger, connected and professional future for exhibition stall designers, fabricators and service providers across India.",
+  heroHeadline: "UNITING TAMIL NADU'S STALL & FABRICATION INDUSTRY",
+  heroSubtext: "Building a stronger, connected and professional future for exhibition stall designers, fabricators and expo service providers across Chennai, Coimbatore, Madurai, Trichy, Salem and all of Tamil Nadu.",
   statMembers: "500+",
   statCompanies: "100+",
   statProjects: "1000+",
@@ -43,12 +43,12 @@ export const initialLeaders: Leader[] = [
     designation: "President",
     slug: "president",
     photoUrl: null, // neutral silhouette placeholder
-    shortBio: "Veteran fabrication pioneer leading the national effort to standardize exhibition production guidelines, vendor safety, and industry fair-practice codes.",
-    fullBio: "Serving as President of the Expo & Stall Fabricators Association, providing leadership, vision, and strategic direction. With over 25 years of extensive industry immersion across major trade centers in India and abroad, spearheads initiatives on labor safety benchmarks, standard vendor payment contracts, and international expo partnerships.",
+    shortBio: "Veteran fabrication pioneer leading the state-wide effort to standardize exhibition stall production guidelines, vendor safety, and industry fair-practice codes across Tamil Nadu.",
+    fullBio: "Serving as President of the Tamil Nadu Stall Fabrication Association (TNSFA), providing leadership, vision, and strategic direction. With over 25 years of extensive industry immersion across Chennai Trade Centre, CODISSIA Coimbatore, and national venues, spearheads initiatives on labor safety benchmarks, standard vendor payment contracts, and venue authority dialogue.",
     experience: "25+ Years in Exhibition Architecture & Mega Structure Fabrication",
-    responsibilities: "Strategic Direction, National Representation, Government Liaison, Committee Oversight",
-    email: "president@esfa-india.org",
-    phone: "+91 11 4987 6501",
+    responsibilities: "Strategic Direction, State Representation, Government Liaison, Committee Oversight",
+    email: "president@tnsfa.org",
+    phone: "+91 44 4897 6501",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     displayOrder: 1,
@@ -60,12 +60,12 @@ export const initialLeaders: Leader[] = [
     designation: "Vice President",
     slug: "vice-president",
     photoUrl: null,
-    shortBio: "Specialist in high-tech experiential booths and multi-city expo turnkey logistics, championing sustainable modular fabrication nationwide.",
-    fullBio: "Guides strategic operations, member welfare programs, and regional chapter coordination across Western and Southern India zones. Instrumental in introducing carbon-neutral exhibition design frameworks and vendor upskilling academies.",
+    shortBio: "Specialist in high-tech experiential booths and multi-district expo turnkey logistics, championing sustainable modular fabrication across Tamil Nadu.",
+    fullBio: "Guides strategic operations, member welfare programs, and regional chapter coordination across Chennai, Kongu Region (Coimbatore, Tirupur, Erode), and Southern Districts. Instrumental in introducing carbon-neutral exhibition design frameworks and vendor upskilling academies.",
     experience: "20+ Years in Modular Exhibition Engineering & Turnkey Services",
-    responsibilities: "Regional Chapter Development, Green Booth Standards, Inter-State Logistics",
-    email: "vicepresident@esfa-india.org",
-    phone: "+91 11 4987 6502",
+    responsibilities: "Regional Chapter Development, Green Booth Standards, State-wide Logistics",
+    email: "vicepresident@tnsfa.org",
+    phone: "+91 44 4897 6502",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     displayOrder: 2,
@@ -77,12 +77,12 @@ export const initialLeaders: Leader[] = [
     designation: "General Secretary",
     slug: "secretary",
     photoUrl: null,
-    shortBio: "Manages association operations, membership verification, venue dispute mediation, and organizational knowledge platforms.",
-    fullBio: "Acts as the chief administrative officer of the association, coordinating committee decisions, institutional filings, and daily member grievances. Has led more than 150 turnkey national pavilions across BIEC Bangalore, Pragati Maidan New Delhi, and Bombay Exhibition Centre.",
-    experience: "18+ Years in Expo Production Management & Trade Union Affairs",
+    shortBio: "Manages association operations, membership verification, venue dispute mediation, and organizational knowledge platforms for Tamil Nadu fabricators.",
+    fullBio: "Acts as the chief administrative officer of TNSFA, coordinating committee decisions, institutional filings, and daily member grievances. Has led more than 150 turnkey pavilions across Chennai Trade Centre, CODISSIA Coimbatore, and major national trade fairs.",
+    experience: "18+ Years in Expo Production Management & Trade Association Affairs",
     responsibilities: "Secretariat Administration, Member Grievance Cell, AGM Governance",
-    email: "secretary@esfa-india.org",
-    phone: "+91 11 4987 6503",
+    email: "secretary@tnsfa.org",
+    phone: "+91 44 4897 6503",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     displayOrder: 3,
@@ -94,12 +94,12 @@ export const initialLeaders: Leader[] = [
     designation: "Joint Secretary",
     slug: "joint-secretary",
     photoUrl: null,
-    shortBio: "Spearheading modern 3D spatial design conventions, youth talent incubation, and vocational certification for fabricators.",
+    shortBio: "Spearheading modern 3D spatial design conventions, youth talent incubation, and vocational certification for Tamil Nadu fabricators.",
     fullBio: "Focuses on technical training workshops, safety protocol rollouts, and bridging design agencies with ground fabrication workshops. Collaborates closely with vocational design institutes to establish specialized exhibition design curricula.",
     experience: "15+ Years in 3D Exhibition Design, Parametric Booths & Lighting",
     responsibilities: "Design Standards, Vocational Workshops, Digital Communication",
-    email: "jointsecretary@esfa-india.org",
-    phone: "+91 11 4987 6504",
+    email: "jointsecretary@tnsfa.org",
+    phone: "+91 44 4897 6504",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     displayOrder: 4,
@@ -111,12 +111,12 @@ export const initialLeaders: Leader[] = [
     designation: "Treasurer",
     slug: "treasurer",
     photoUrl: null,
-    shortBio: "Ensuring fiscal transparency, member welfare fund allocation, and ethical financial management for the national body.",
-    fullBio: "Oversees the financial health, audit compliances, and membership fee allocations of the association. Manages the newly instituted Emergency Artisan & Fabricator Relief Fund for on-site emergencies.",
+    shortBio: "Ensuring fiscal transparency, member welfare fund allocation, and ethical financial management for the state body.",
+    fullBio: "Oversees the financial health, audit compliances, and membership fee allocations of the association. Manages the newly instituted Emergency Artisan & Fabricator Relief Fund for on-site emergencies across Tamil Nadu trade centers.",
     experience: "22+ Years in Commercial Exhibition Contracting & Industrial Management",
     responsibilities: "Financial Audits, Budget Allocation, Member Relief Fund",
-    email: "treasurer@esfa-india.org",
-    phone: "+91 11 4987 6505",
+    email: "treasurer@tnsfa.org",
+    phone: "+91 44 4897 6505",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     displayOrder: 5,
@@ -128,12 +128,12 @@ export const initialLeaders: Leader[] = [
     designation: "Executive Committee Member (Technical)",
     slug: "executive-committee-technical",
     photoUrl: null,
-    shortBio: "Expert on electrical safety, fire retardant certifications, and structural load calculations for two-tier expo pavilions.",
-    fullBio: "Directs technical audits and safety advisories for member workshops. Regularly conducts safety masterclasses for rigging, electrical balance, and structural integrity during high-rush setup windows.",
+    shortBio: "Expert on electrical safety, fire retardant certifications, and structural load calculations for expo pavilions in Tamil Nadu venues.",
+    fullBio: "Directs technical audits and safety advisories for member workshops. Regularly conducts safety masterclasses for rigging, electrical balance, and structural integrity during high-rush setup windows at Chennai Trade Centre and CODISSIA.",
     experience: "19+ Years in Mezzanine Stall Fabrication & Electrical Engineering",
     responsibilities: "Safety Certification, Electrical Standards, On-site Hall Audits",
-    email: "committee.tech@esfa-india.org",
-    phone: "+91 11 4987 6506",
+    email: "committee.tech@tnsfa.org",
+    phone: "+91 44 4897 6506",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     displayOrder: 6,
@@ -349,14 +349,14 @@ export const initialMembershipTypes: MembershipType[] = [
     slug: "individual-member",
     description: "Designed for independent stall designers, 3D visualizers, supervisors, and freelance expo consultants.",
     benefits: [
-      "Official ESFA Member Certificate & Digital Badge",
-      "Access to National Member Directory & Networking Meets",
+      "Official TNSFA Member Certificate & Digital Badge",
+      "Access to State Member Directory & Networking Meets",
       "Discounted Entry to Technical Skill Workshops & Seminars",
       "Access to standard client contracts & legal dispute advice",
-      "Job & Project Collaboration Board"
+      "Job & Project Collaboration Board across Tamil Nadu"
     ],
     eligibility: "Minimum 2 years proven freelance or professional track record in stall design or expo supervision.",
-    feeAnnual: 4500,
+    feeAnnual: 2000,
     feeCurrency: "INR",
     displayOrder: 1,
     isActive: true
@@ -367,15 +367,15 @@ export const initialMembershipTypes: MembershipType[] = [
     slug: "company-member",
     description: "For registered fabrication workshops, turnkey exhibition contractors, and full-service booth agencies.",
     benefits: [
-      "Comprehensive Company Profile with Portfolio Showcase on ESFA Portal",
+      "Comprehensive Company Profile with Portfolio Showcase on TNSFA Portal",
       "Direct Lead Forwarding from Association Client Inquiries",
       "Venue Dispute Mediation & Defaulting Client Blacklist Warning Bulletin",
       "Voting Rights at Annual General Meeting (AGM)",
-      "Priority Booth Allotment & Sponsorship Discounts at ESFA Expos",
-      "Free Passes for 4 Team Members to Annual National Summit"
+      "Priority Booth Allotment & Sponsorship Discounts at TNSFA Expos",
+      "Free Passes for 4 Team Members to Annual State Summit"
     ],
-    eligibility: "Registered entity (Pvt Ltd, LLP, Partnership, or GST registered proprietorship) with minimum 10 completed booths.",
-    feeAnnual: 18000,
+    eligibility: "Registered entity (Pvt Ltd, LLP, Partnership, or GST registered proprietorship) with completed booths.",
+    feeAnnual: 5000,
     feeCurrency: "INR",
     displayOrder: 2,
     isActive: true
@@ -386,13 +386,13 @@ export const initialMembershipTypes: MembershipType[] = [
     slug: "associate-member",
     description: "For vendors in the allied ecosystem: Printing, AV, Furniture Rentals, Electrical, and Logistics.",
     benefits: [
-      "Direct exposure to 500+ active fabrication companies seeking allied vendors",
-      "Listing in Allied Vendor Directory across all major Indian exhibition hubs",
+      "Direct exposure to active fabrication companies across Tamil Nadu seeking allied vendors",
+      "Listing in Allied Vendor Directory across Chennai, Coimbatore & Madurai trade hubs",
       "Product Demo & Vendor Showcase slots during Chapter Meets",
-      "Regular updates on upcoming mega exhibitions & venue guidelines"
+      "Regular updates on upcoming exhibitions at Chennai Trade Centre & CODISSIA"
     ],
     eligibility: "Companies supplying equipment, materials, AV, printing, or logistics to the expo industry.",
-    feeAnnual: 12000,
+    feeAnnual: 3000,
     feeCurrency: "INR",
     displayOrder: 3,
     isActive: true
@@ -436,26 +436,26 @@ export const initialMembershipTypes: MembershipType[] = [
 export const initialEvents: EventItem[] = [
   {
     id: "evt-1",
-    title: "National Stall Fabricators & Designers Summit 2026",
-    slug: "national-stall-fabricators-summit-2026",
+    title: "Tamil Nadu State Stall Fabricators & Designers Summit 2026",
+    slug: "tamil-nadu-stall-fabricators-summit-2026",
     bannerUrl: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
     date: "2026-10-18T09:30:00.000Z",
     timeString: "09:30 AM – 06:30 PM IST",
-    venue: "Main Auditorium, Yashobhoomi (IICC), Sector 25, Dwarka",
-    city: "New Delhi",
-    mapsUrl: "https://maps.google.com/?q=Yashobhoomi+Dwarka",
-    description: "The flagship annual congregation bringing together 800+ stall designers, production heads, venue authorities, and material suppliers under one roof to debate emerging trends, AI-driven spatial design, and unified vendor contracts.",
+    venue: "Convention Centre, Chennai Trade Centre (CTC), Nandambakkam",
+    city: "Chennai",
+    mapsUrl: "https://maps.google.com/?q=Chennai+Trade+Centre",
+    description: "The flagship state congregation bringing together stall designers, fabrication production heads, venue authorities, and material suppliers across Tamil Nadu to debate emerging trends, 3D spatial design, and unified vendor contracts.",
     agenda: [
-      { time: "09:30 AM", title: "Registration & Welcome Breakfast", speaker: "Secretariat Team" },
-      { time: "10:30 AM", title: "Keynote: Future of Experiential Booths in India", speaker: "President / Chairman" },
-      { time: "12:00 PM", title: "Panel: Solving the Rapid 48-Hour Hall Setup Challenge", speaker: "Leading Fabrication Heads" },
+      { time: "09:30 AM", title: "Registration & Traditional Welcome", speaker: "TNSFA Secretariat Team" },
+      { time: "10:30 AM", title: "Keynote: Growth of Exhibition Architecture in Tamil Nadu", speaker: "President / Chairman" },
+      { time: "12:00 PM", title: "Panel: CTC & CODISSIA Setup Windows & Safety Compliance", speaker: "Leading Fabrication Heads" },
       { time: "02:00 PM", title: "Networking Lunch & Allied Vendor Expo", speaker: "All Attendees" },
-      { time: "03:30 PM", title: "Session: Fire Safety & Electrical Compliance Mandates", speaker: "Venue Chief Fire Marshal" },
-      { time: "05:00 PM", title: "National Excellence in Stall Fabrication Awards 2026", speaker: "Jury Panel" }
+      { time: "03:30 PM", title: "Session: Electrical Safety & Fire Norms in Two-Tier Stalls", speaker: "State Fire & Electrical Safety Marshals" },
+      { time: "05:00 PM", title: "Tamil Nadu Stall Fabrication Excellence Awards 2026", speaker: "Jury Panel" }
     ],
     speakers: [
-      { name: "Executive Committee Panel", role: "Keynote Speakers", company: "ESFA National Body" },
-      { name: "Senior Venue Director", role: "Special Guest", company: "India International Convention Center" }
+      { name: "Executive Committee Panel", role: "Keynote Speakers", company: "TNSFA State Body" },
+      { name: "Senior Trade Centre Official", role: "Special Guest", company: "Chennai Trade Centre Authority" }
     ],
     galleryImages: [
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
@@ -466,39 +466,39 @@ export const initialEvents: EventItem[] = [
   },
   {
     id: "evt-2",
-    title: "Regional Fabricators Meet – Mumbai & Western Zone",
-    slug: "regional-fabricators-meet-mumbai",
+    title: "Kongu Region Fabricators Meet – Coimbatore & Tirupur",
+    slug: "kongu-region-fabricators-meet-coimbatore",
     bannerUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
     date: "2026-11-12T15:00:00.000Z",
     timeString: "03:00 PM – 08:30 PM IST",
-    venue: "The Westin Mumbai Garden City, Goregaon East",
-    city: "Mumbai",
-    mapsUrl: "https://maps.google.com/?q=Westin+Goregaon+Mumbai",
-    description: "An intensive networking gathering addressing local challenges at BEC Goregaon and Jio World Centre: night shift safety passes, logistics bottlenecks, labor union rates, and standardized quotation templates.",
+    venue: "CODISSIA Trade Fair Complex, Hall D, Avinashi Road",
+    city: "Coimbatore",
+    mapsUrl: "https://maps.google.com/?q=CODISSIA+Coimbatore",
+    description: "An intensive regional networking gathering addressing local challenges at CODISSIA: night shift safety passes, crane/forklift logistics, labor rates, and standardized quotation templates.",
     agenda: [
-      { time: "03:00 PM", title: "Check-in & Tea", speaker: "West Zone Coordinator" },
-      { time: "04:00 PM", title: "Open Mic: Ground Reality of Fabrication Windows", speaker: "Member Fabricators" },
-      { time: "06:00 PM", title: "Action Charter for Mumbai Chapter", speaker: "Vice President" },
-      { time: "07:30 PM", title: "Cocktail Dinner & Business Networking", speaker: "All Attendees" }
+      { time: "03:00 PM", title: "Check-in & Tea", speaker: "Coimbatore Chapter Convenor" },
+      { time: "04:00 PM", title: "Open Mic: Ground Realities of Industrial Expo Setups", speaker: "Member Fabricators" },
+      { time: "06:00 PM", title: "Action Charter for Western Tamil Nadu", speaker: "Vice President" },
+      { time: "07:30 PM", title: "Dinner & Business Networking", speaker: "All Attendees" }
     ],
     isFeatured: false,
     status: "PUBLISHED"
   },
   {
     id: "evt-3",
-    title: "Masterclass on Sustainable & Reusable Modular Fabrication",
+    title: "Masterclass on Sustainable Modular Fabrication & 3D Spatial Tools",
     slug: "masterclass-sustainable-modular-fabrication",
     bannerUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
     date: "2026-12-05T10:00:00.000Z",
     timeString: "10:00 AM – 04:00 PM IST",
-    venue: "BIEC Executive Conference Center, Tumkur Road",
-    city: "Bengaluru",
-    mapsUrl: "https://maps.google.com/?q=BIEC+Bengaluru",
-    description: "Practical hands-on technical workshop for 3D designers and workshop supervisors on moving away from single-use flex/MDF toward honeycomb boards, recyclable tension fabrics, and modular aluminum matrices.",
+    venue: "Madurai Convention Center / Expo Hall, Ring Road",
+    city: "Madurai",
+    mapsUrl: "https://maps.google.com/?q=Madurai+Convention+Centre",
+    description: "Hands-on technical workshop for Tamil Nadu 3D designers and workshop supervisors on moving toward reusable aluminum matrices, recyclable fabrics, and sustainable modular designs.",
     agenda: [
-      { time: "10:00 AM", title: "Materials Innovation Overview", speaker: "Materials Scientist" },
-      { time: "11:30 AM", title: "Hands-on Matrix Assembly Demo", speaker: "Technical Trainer" },
-      { time: "02:00 PM", title: "Cost-Benefit Calculator for Clients", speaker: "Joint Secretary" }
+      { time: "10:00 AM", title: "Eco-Friendly Material Selection", speaker: "Technical Consultant" },
+      { time: "11:30 AM", title: "Modular Matrix Setup Demonstration", speaker: "Master Fabricator" },
+      { time: "02:00 PM", title: "Standard Pricing Models for Commercial Booths", speaker: "Joint Secretary" }
     ],
     isFeatured: false,
     status: "PUBLISHED"
@@ -508,33 +508,33 @@ export const initialEvents: EventItem[] = [
 export const initialActivities = [
   {
     year: "Core Pillar 1",
-    title: "Industry Networking & Chapters",
-    description: "Creating unified regional chapters across New Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, and Kolkata so fabricators have immediate peer support during high-stakes exhibitions."
+    title: "State-Wide Industry Networking & Chapters",
+    description: "Creating unified chapters across Chennai, Coimbatore, Madurai, Tiruchirappalli, and Salem so fabricators have immediate peer support during trade exhibitions."
   },
   {
     year: "Core Pillar 2",
     title: "Standardized Client Contracts & Safety Codes",
-    description: "Drafting pan-India recommended payment milestones, force majeure clauses, and fire-retardant structural guidelines to protect fabricators from arbitrary deductions."
+    description: "Drafting recommended payment milestones, force majeure clauses, and fire-retardant structural guidelines to protect Tamil Nadu fabricators from arbitrary payment deductions."
   },
   {
     year: "Core Pillar 3",
-    title: "Knowledge Sharing & Technical Workshops",
-    description: "Running monthly technical clinics on parametric 3D tools (Blender, 3ds Max, Rhino), electrical load balancing, and eco-friendly recyclable booth materials."
+    title: "Technical Workshops & 3D Clinics",
+    description: "Conducting regular technical sessions on parametric 3D tools, structural load calculations, and energy-efficient lighting across Tamil Nadu trade hubs."
   },
   {
     year: "Core Pillar 4",
     title: "Labor Welfare & Artisan Relief Fund",
-    description: "Establishing emergency medical assistance, group on-site accidental insurance policies, and vocational training certifications for carpentry and electrical crews."
+    description: "Establishing emergency medical assistance, group on-site accidental insurance, and vocational training certifications for carpentry and electrical crews in Tamil Nadu."
   },
   {
     year: "Core Pillar 5",
-    title: "Industry Representation & Government Dialogue",
-    description: "Liaising with ITPO, state trade promotion corporations, and convention center authorities for fair gate passes, clean setup facilities, and prompt depot clearances."
+    title: "Venue & Government Dialogue",
+    description: "Liaising with Chennai Trade Centre, CODISSIA, and state industry departments for fair gate passes, clean setup facilities, and prompt depot clearances."
   },
   {
     year: "Core Pillar 6",
-    title: "Excellence Awards & National Recognition",
-    description: "Celebrating true unsung craftsmanship through peer-voted annual awards for Best Custom Pavilion, Best Double Decker, Most Sustainable Booth, and Artisan of the Year."
+    title: "Tamil Nadu Stall Fabrication Awards",
+    description: "Celebrating true craftsmanship through peer-voted annual awards for Best Custom Pavilion, Best Double Decker, and Outstanding Fabricator of the Year."
   }
 ];
 
@@ -548,44 +548,44 @@ export const initialGallery: GalleryItem[] = [
   },
   {
     id: "gal-2",
-    title: "Architectural Trussing & Profile Lighting",
+    title: "Sleek Minimalist Tech Stall",
     imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
-    category: "Fabrication",
+    category: "Design",
     displayOrder: 2
   },
   {
     id: "gal-3",
-    title: "3D Parametric Canopy & Curve Video Wall",
-    imageUrl: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
-    category: "Exhibitions",
+    title: "Large Format Country Pavilion",
+    imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    category: "Fabrication",
     displayOrder: 3
   },
   {
     id: "gal-4",
-    title: "National Fabricators General Assembly",
-    imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80",
-    category: "Member Meets",
+    title: "Precision Workshop Production & CNC Routing",
+    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+    category: "Fabrication",
     displayOrder: 4
   },
   {
     id: "gal-5",
-    title: "On-site Rigging & High-Ceiling Installation",
-    imageUrl: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-    category: "Fabrication",
+    title: "Dynamic Curved LED & Lighting Rig",
+    imageUrl: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
+    category: "Technology",
     displayOrder: 5
   },
   {
     id: "gal-6",
-    title: "VIP Lounge & Meeting Suite at Auto Expo",
-    imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    category: "Exhibitions",
+    title: "State Association General Body Assembly",
+    imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80",
+    category: "Events",
     displayOrder: 6
   },
   {
     id: "gal-7",
-    title: "Hands-on Joinery & Safety Training Workshop",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    category: "Workshops",
+    title: "On-Site Midnight Build-up Rigging",
+    imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+    category: "Fabrication",
     displayOrder: 7
   },
   {
@@ -600,42 +600,42 @@ export const initialGallery: GalleryItem[] = [
 export const initialNews: NewsItem[] = [
   {
     id: "news-1",
-    title: "Formation of National Expo & Stall Fabricators Association Announced",
-    slug: "formation-of-national-expo-stall-fabricators-association",
+    title: "Formation of Tamil Nadu Stall Fabrication Association Announced",
+    slug: "formation-of-tamil-nadu-stall-fabrication-association",
     category: "Association Launch",
     imageUrl: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
-    summary: "Over 120 leading exhibition stall builders, spatial designers, and allied vendors assemble in New Delhi to formally register the premier national association.",
-    content: `In a historic step for the Indian trade fair and exhibition industry, over 120 key fabricators, designers, and allied service contractors gathered in New Delhi to announce the formation of the **EXPO & STALL FABRICATORS ASSOCIATION** (ESFA).
+    summary: "Leading exhibition stall builders, spatial designers, and allied vendors assemble in Chennai to formally register the premier state association.",
+    content: `In a historic step for the Tamil Nadu trade fair and exhibition industry, fabricators, designers, and allied service contractors gathered in Chennai to announce the formation of the **TAMIL NADU STALL FABRICATION ASSOCIATION** (TNSFA).
 
-The association addresses longstanding industry pain points: lack of standardized safety norms, arbitrary delays in site handover, payment settlement disputes, and the absence of a unified national voice before venue operators and event organizers.
+The association addresses longstanding industry pain points: lack of standardized safety norms, arbitrary delays in site handover, payment settlement disputes, and the absence of a unified voice before venue operators and event organizers.
 
-The association will launch regional chapters across Mumbai, Bangalore, Chennai, Hyderabad, and Kolkata in coming weeks to ensure grassroots representation for small, medium, and large production houses alike.`,
-    author: "ESFA Secretariat",
+The association will coordinate regional chapters across Chennai, Coimbatore, Madurai, Tiruchirappalli, and Salem to ensure grassroots representation for production workshops of all sizes.`,
+    author: "TNSFA Secretariat",
     publishedAt: "2026-08-10",
     status: "PUBLISHED"
   },
   {
     id: "news-2",
-    title: "ESFA Issues Pan-India Advisory on Fire-Retardant Paint Standards",
-    slug: "esfa-fire-retardant-paint-standards-advisory",
+    title: "TNSFA Issues Advisory on Fire-Retardant Standards for Chennai Trade Centre",
+    slug: "tnsfa-fire-retardant-standards-advisory",
     category: "Industry Update",
     imageUrl: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-    summary: "New technical advisory outlines certified non-toxic, fire-retardant coatings and electrical safety protocols for double-decker pavilions.",
-    content: `In view of stricter venue fire regulations across Bharat Mandapam, Yashobhoomi, and BIEC, the ESFA Technical Committee has issued a comprehensive advisory outlining approved brands of Class-1 fire retardant paints and electrical wiring standards.
+    summary: "New technical advisory outlines certified non-toxic, fire-retardant coatings and electrical safety protocols for pavilions across Tamil Nadu.",
+    content: `In view of venue safety regulations across Chennai Trade Centre and CODISSIA, the TNSFA Technical Committee has issued a comprehensive advisory outlining approved Class-1 fire retardant materials and electrical wiring standards.
 
-Member fabricators will receive free calibration templates and can avail bulk member discounts directly from approved paint manufacturers.`,
+Member fabricators will receive free calibration templates and can avail bulk member discounts directly from approved paint and truss manufacturers.`,
     author: "Technical Committee",
     publishedAt: "2026-08-28",
     status: "PUBLISHED"
   },
   {
     id: "news-3",
-    title: "Preparations Underway for National Stall Fabricators Summit 2026",
-    slug: "preparations-underway-national-summit-2026",
+    title: "Preparations Underway for Tamil Nadu Stall Fabricators Summit 2026",
+    slug: "preparations-underway-tamil-nadu-summit-2026",
     category: "Upcoming Expo",
     imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
-    summary: "Over 800 delegates expected at Yashobhoomi for the largest gathering of stall craftsmanship and experiential spatial design.",
-    content: `Registration has officially opened for the National Stall Fabricators & Designers Summit 2026. The summit features 6 deep-dive technical panels, a 40-booth allied vendor technology expo, and the prestigious National Stall Excellence Awards ceremony.
+    summary: "Delegates expected at Chennai Trade Centre for the state gathering of stall craftsmanship and experiential spatial design.",
+    content: `Registration has officially opened for the Tamil Nadu Stall Fabricators & Designers Summit 2026. The summit features technical panels, an allied vendor technology expo, and the prestigious State Stall Excellence Awards ceremony.
 
 Members can reserve early bird seats through the association web portal.`,
     author: "Event Committee",
@@ -649,8 +649,8 @@ export const initialTestimonials: Testimonial[] = [
     id: "test-1",
     name: "Founder & Creative Director",
     designation: "Principal Designer",
-    company: "Metro Stall Dynamics, Mumbai",
-    quote: "For decades, our industry worked in fragmented silos. ESFA finally gives us the collective dignity, institutional backing, and contract protection we needed to deal confidently with multi-national clients.",
+    company: "Chennai Pavilion Crafts, Guindy, Chennai",
+    quote: "For decades, our industry in Tamil Nadu worked in fragmented silos. TNSFA finally gives us the collective dignity, institutional backing, and contract protection we needed when delivering turnkey trade fair stalls.",
     avatarUrl: "",
     rating: 5,
     isActive: true
@@ -659,8 +659,8 @@ export const initialTestimonials: Testimonial[] = [
     id: "test-2",
     name: "Managing Partner",
     designation: "Managing Partner",
-    company: "Southern Expo Crafts, Bengaluru",
-    quote: "The technical workshops and standard client payment guidelines have brought genuine structure to our business. Becoming a member is the single best decision for any growing fabrication studio.",
+    company: "Kongu Expo Tech, CODISSIA Zone, Coimbatore",
+    quote: "The technical workshops and standard client payment guidelines have brought genuine structure to our business in Western Tamil Nadu. Becoming a TNSFA member is the single best decision for any growing fabrication studio.",
     avatarUrl: "",
     rating: 5,
     isActive: true
@@ -669,8 +669,8 @@ export const initialTestimonials: Testimonial[] = [
     id: "test-3",
     name: "Director of Production",
     designation: "Director of Production",
-    company: "Capital Pavilions, New Delhi",
-    quote: "When unexpected hall security issues happen at midnight during build-up, having the association's backing and rapid grievance cell makes all the difference in the world.",
+    company: "Pandian Trade Structures, Madurai",
+    quote: "When unexpected hall security issues happen at midnight during build-up at Chennai Trade Centre or CODISSIA, having TNSFA's backing and rapid grievance cell makes all the difference in the world.",
     avatarUrl: "",
     rating: 5,
     isActive: true

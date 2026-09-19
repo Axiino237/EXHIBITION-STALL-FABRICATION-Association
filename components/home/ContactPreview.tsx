@@ -70,10 +70,10 @@ export default function ContactPreview() {
           <div className="lg:col-span-5 bg-[#111827] rounded-2xl p-8 border border-white/10 flex flex-col justify-between">
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-white border-l-4 border-[#F59E0B] pl-3">
-                Association Headquarters
+                Tamil Nadu State Secretariat
               </h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Our national administrative desk coordinates with venue authorities, organizing committees, and regional chapter convenors across all major Indian exhibition destinations.
+                Our state administrative desk coordinates with venue authorities (Chennai Trade Centre, CODISSIA Coimbatore, Madurai Expo Centre), event organizers, and district chapter convenors across Tamil Nadu.
               </p>
 
               <div className="space-y-4 pt-2 text-xs sm:text-sm">
@@ -84,7 +84,7 @@ export default function ContactPreview() {
                   <div>
                     <span className="text-slate-400 block text-[11px]">Secretariat Address</span>
                     <strong className="text-white font-medium">
-                      Aerocity Expo Tower, Ground &amp; 3rd Floor, New Delhi - 110037, India
+                      Trade Centre Hub, Mount Poonamallee Road, Nandambakkam / Guindy, Chennai - 600089, Tamil Nadu, India
                     </strong>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export default function ContactPreview() {
                   </div>
                   <div>
                     <span className="text-slate-400 block text-[11px]">Direct Secretariat Hotline</span>
-                    <strong className="text-white font-medium">+91 11 4987 6500</strong>
+                    <strong className="text-white font-medium">+91 44 4897 6500</strong>
                   </div>
                 </div>
 
@@ -105,7 +105,7 @@ export default function ContactPreview() {
                   </div>
                   <div>
                     <span className="text-slate-400 block text-[11px]">Official Email</span>
-                    <strong className="text-white font-medium">secretariat@esfa-india.org</strong>
+                    <strong className="text-white font-medium">secretariat@tnsfa.org</strong>
                   </div>
                 </div>
 
@@ -115,7 +115,7 @@ export default function ContactPreview() {
                   </div>
                   <div>
                     <span className="text-slate-400 block text-[11px]">WhatsApp Member Helpdesk</span>
-                    <strong className="text-white font-medium">+91 98110 54321</strong>
+                    <strong className="text-white font-medium">+91 98401 23456</strong>
                   </div>
                 </div>
 
@@ -134,7 +134,7 @@ export default function ContactPreview() {
             </div>
 
             <div className="mt-8 pt-6 border-t border-white/10 text-xs text-slate-400">
-              Emergency on-site hall issues during live build-ups: WhatsApp our 24x7 Duty Officer at +91 98110 54321.
+              Emergency on-site hall issues during live build-ups: WhatsApp our 24x7 Duty Officer at +91 98401 23456.
             </div>
           </div>
 

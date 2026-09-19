@@ -1,6 +1,6 @@
-# ESFA INDIA — EXPO & STALL FABRICATORS ASSOCIATION
+# TAMIL NADU STALL FABRICATION ASSOCIATION (TNSFA)
 
-Official web portal and landing page for **ESFA India (Expo & Stall Fabricators Association)**, the premier national professional association / sangam representing stall designers, fabrication workshops, turnkey event contractors, and exhibition service providers across India.
+Official web portal and landing page for **Tamil Nadu Stall Fabrication Association (TNSFA)**, the apex state professional association / sangam representing stall designers, fabrication workshops, turnkey event contractors, and exhibition service providers across Tamil Nadu.
 
 ---
 
@@ -10,10 +10,14 @@ Official web portal and landing page for **ESFA India (Expo & Stall Fabricators 
   - Smooth anchor navigation across all sections (`#about`, `#ecosystem`, `#leadership`, `#events`, `#gallery`, `#membership`, `#contact`).
 - **Interactive Popup Modal for Membership**:
   - Direct digital application modal with backdrop blur, scroll locking, category selection, and instant confetti on submission.
+- **Affordable Tier Pricing**:
+  - Individual Member: ₹2,000 / year
+  - Associate Member: ₹3,000 / year
+  - Company Member: ₹5,000 / year
 - **Photo Gallery Lightbox**:
   - Full-screen interactive modal lightbox for high-resolution project showcases.
 - **Leadership Profiles Modal**:
-  - Detailed bio viewer for national committee members.
+  - Detailed bio viewer for state committee members.
 - **Serverless Email Integration**:
   - Dual-support email dispatch system ready for Vercel Serverless (Resend API & Nodemailer SMTP).
   - In local development without credentials, simulates and logs submissions cleanly.
